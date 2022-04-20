@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="/"><img src="/assets/images/logo.png" alt="logo" width="100px"></a></div>
+        <nav>
+          <ul>
+            <li><a href="/diensten.html">Diensten</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li id="login"><a href="/offerte.html" >Offerte</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/diensten.html">Diensten</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li id="login"><a href="/offerte.html" >Offerte</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <script src="assets/js/index.js"></script>
+
+    <h1 style="text-align: center; padding-top: 16px; padding-bottom: 16px;">Contact</h1>
+
+    <h2 class="text-style">Neem contact met ons op</h2>
+<p class="text-style">Heeft u een vraag aan ons? Stel deze gerust via onderstaand formulier. Op werkdagen nemen wij binnen 48 uur contact met u op.<br>
+Wilt u een offerte aanvragen? <a href="offerte.html">Gebruik dan het offerteformulier.</a></p>
+
+
+<div class="contact-form">
+  <h3 class="text-style">Contact Torani Klusbedrijf</h3>
+  
+  <form action="https://formsubmit.co/toraniklusbedrijf@gmail.com" method="POST">
+
+    <!-- redirect to thank you page -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/bedankt.html">
+    <!-- email subject -->
+    <input type="hidden" name="_subject" value="Torani Klussenbedrijf | Nieuwe bericht!">
+    <!-- skip recaptcha -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- email template -->
+    <input type="hidden" name="_template" value="table">
+    <!-- avoid spam -->
+    <input type="text" name="_honey" style="display:none">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Naam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="Naam" placeholder="" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">E-mail</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="E-mail" placeholder="" required>
+      </div>
+    </div>
+
+    
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Bericht</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="Bericht" placeholder="" style="height:200px" required></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Verzenden" class="subhover">
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <img src="assets/images/avatar.png" alt="John" style="width:30%; border-radius: 20px;"><br><br>
+  <h4><b>Walid Torani</b></h4> 
+    <p>06 878 28 28
+      <br>
+      toraniklusbedrijf@gmail.com
+    </p><br>
+    <p><b>KvK: </b> 59581883 <br></p>
+    <p><b>BTW: </b> NL823807071B01 <br></p>
+    <p><b>IBAN: </b> NL66 INGB 0675 0050 51<br><br></p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+</div>
+
+<footer>
+      
+  <ol>
+    <li>Torani Klussenbedrijf</li>
+    <li>Tel: 06 878 28 28</li>
+    <li>toraniklusbedrijf@gmail.com</li><br>
+    <li>KvK: 59581883</li>
+    <li>BTW: NL823807071B01</li>
+    <li>IBAN: NL66 INGB 0675 0050 51</li>
+  </ol>
+
+  <br>
+  <p class="text-center">Copyright &copy; <span><a href="https://github.com/Bonotti">Bonotti</a></span></p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerte</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="/"><img src="/assets/images/logo.png" alt="logo" width="100px"></a></div>
+        <nav>
+          <ul>
+            <li><a href="/diensten.html">Diensten</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li id="login"><a href="/offerte.html" >Offerte</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/diensten.html">Diensten</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li id="login"><a href="/offerte.html" >Offerte</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <script src="assets/js/index.js"></script>
+
+    <h1 style="text-align: center; padding-top: 16px; padding-bottom: 16px;">Offerte</h1>
+
+    <h2 class="text-style">Benieuwd naar wat wij voor u kunnen betekenen?</h2>
+    <p class="text-style"> Om een passend voorstel te maken van uw klus, hebben we een duidelijke omschrijving nodig van de werkzaamheden en situatie, inclusief foto's. Bij complexere klussen komen wij graag eerst bij u langs om samen de mogelijkheden te bespreken.</p>
+    
+    
+<div class="contact-form">
+  <h3 class="text-style">Vraag hier vrijblijvend uw offerte aan</h3>
+
+  <form method="POST" action="https://formsubmit.co/toraniklusbedrijf@gmail.com" enctype="multipart/form-data">
+    <!-- redirect to thank you page -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/bedankt.html">
+    <!-- email subject -->
+    <input type="hidden" name="_subject" value="Torani Klussenbedrijf | Nieuwe klusje!">
+    <!-- skip recaptcha -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- email template -->
+    <input type="hidden" name="_template" value="table">
+    <!-- avoid spam -->
+    <input type="text" name="_honey" style="display:none">
+
+    
+
+    <div class="row">
+      <label for="fname">Postcode*</label>
+      <input type="text" id="fname" name="Postcode" placeholder="" required>
+    </div>
+
+    <div class="row">
+      <label for="fname">Woonplaats*</label>
+      <input type="text" id="fname" name="Woonplaats" placeholder="" required>
+    </div>
+
+    <div class="row">
+      <label for="fname">Adres*</label>
+      <input type="text" id="fname" name="Adres" placeholder="" required>
+    </div>
+
+    <div class="row">
+      <label for="fname">Huisnummer*</label>
+      <input type="text" id="fname" name="Huisnummer" placeholder="" required>
+    </div>
+
+    <div class="row">
+        <label for="fname">Naam*</label>
+        <input type="text" id="fname" name="Naam" placeholder="" required>
+    </div>
+
+    <div class="row">
+      <label>E-mail*</label>
+      <input type="text" name="E-mail" placeholder="" required>
+    </div>
+
+    <div class="row">
+      <label>Bericht</label>
+      <textarea name="Bericht" placeholder="Omschrijving"></textarea>
+    </div>
+    
+    <label for="bestanden">Bestanden</label><br>
+    <input type="file" name="foto 1" accept="image/png, image/jpeg">
+    <input type="file" name="foto 2" accept="image/png, image/jpeg">
+    <input type="file" name="foto 3" accept="image/png, image/jpeg">
+    <input type="file" name="foto 4" accept="image/png, image/jpeg">
+    <button type="submit">Offerte aanvragen</button>
+</form>
+
+</div>
+
+<footer>
+      
+  <ol>
+    <li>Torani Klussenbedrijf</li>
+    <li>Tel: 06 878 28 28</li>
+    <li>toraniklusbedrijf@gmail.com</li><br>
+    <li>KvK: 59581883</li>
+    <li>BTW: NL823807071B01</li>
+    <li>IBAN: NL66 INGB 0675 0050 51</li>
+  </ol>
+
+  <br>
+  <p class="text-center">Copyright &copy; <span><a href="https://github.com/Bonotti">Bonotti</a></span></p>
+
+</footer>    
+
+</body>
+</html>
